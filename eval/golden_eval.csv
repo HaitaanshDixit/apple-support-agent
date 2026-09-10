@@ -1,0 +1,155 @@
+id,text,gold_intent,gold_escalate,gold_escalate_reason,source
+200048,"@AppleSupport hey, my apple id got disabled and i dont know why",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200141,@AppleSupport how do i backup my phone before i sell it 😡,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200097,"@AppleSupport hey, home button completely stopped working out of nowhere",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200090,@AppleSupport phone wont turn on at all after it got wet smh,hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200172,"@AppleSupport hey, so disappointed with the support ive gotten this week pls help",general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200107,"@AppleSupport charging port seems damaged, phone wont charge with any cable 😡",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200017,"@AppleSupport hey, keyboard is lagging so bad since i updated, this update is a disaster 😡",software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200131,"@AppleSupport hey, how do i turn off notifications for one specific app pls help",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200027,@AppleSupport phone overheats now every time i open the camera after updating smh,software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200022,@AppleSupport wifi keeps disconnecting every few minutes since i updated my phone,software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200111,@AppleSupport phone gets extremely hot and shuts off randomly pls help,hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200151,"@AppleSupport just wanted to say i love my new phone, best purchase ever ...",general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200103,"@AppleSupport camera lens shattered, can this be repaired",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200011,"@AppleSupport hey, phone overheats now every time i open the camera after updating",software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200012,"@AppleSupport my phone is so laggy since the update, everything takes forever to load ...",software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200115,"@AppleSupport hey, screen has dead pixels since yesterday, never dropped it !!",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200010,"@AppleSupport phone has been frozen since i updated to the new ios, apps wont even open",software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200071,"@AppleSupport hey, got charged for an app subscription i already cancelled months ago 😡",billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200144,@AppleSupport how do i change my apple id email address 😡,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200075,@AppleSupport i want a refund for an app that doesnt work as advertised 🙄,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200109,"@AppleSupport hey, screen cracked after i dropped my phone, whats the repair cost smh",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200138,"@AppleSupport hey, how do i turn on dark mode",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200083,@AppleSupport got charged for an app subscription i already cancelled months ago,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200035,@AppleSupport forgot my apple id password and the reset link isnt coming through,apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200127,"@AppleSupport hey, how do i share my location with a family member pls help",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200021,@AppleSupport phone overheats now every time i open the camera after updating,software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200047,"@AppleSupport hey, cant sign into icloud on my new phone, keeps saying incorrect password ...",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200063,@AppleSupport charged for a free trial that was supposed to be free,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200134,@AppleSupport how do i change my apple id email address 😡,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200164,@AppleSupport just have a general question about my warranty coverage,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200113,"@AppleSupport hey, screen cracked after i dropped my phone, whats the repair cost ...",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200136,@AppleSupport how do i transfer my photos to my new phone,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200170,"@AppleSupport hey, just have a general question about my warranty coverage pls help",general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200050,@AppleSupport someone changed my apple id password and i didnt do it 😡,apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200068,@AppleSupport got charged for an app subscription i already cancelled months ago,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200066,@AppleSupport i want a refund for an app that doesnt work as advertised !!,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200179,@AppleSupport does anyone actually check these messages,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200073,@AppleSupport subscription renewed even though i turned off auto renew,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200040,"@AppleSupport hey, app store keeps asking me to sign in again and again",apple_id_account_access,True,repeat-contact signal: 'again and again',held_out_synthetic
+200069,@AppleSupport charged for a free trial that was supposed to be free ...,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200092,@AppleSupport phone wont turn on at all after it got wet 😡,hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200125,@AppleSupport how do i restore from an icloud backup !!,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200105,"@AppleSupport battery is swelling and pushing the screen up, is this dangerous",hardware_physical_damage,True,risk keyword matched: 'danger',held_out_synthetic
+200122,"@AppleSupport hey, how do i turn off notifications for one specific app smh",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200051,@AppleSupport forgot my apple id password and the reset link isnt coming through ...,apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200108,"@AppleSupport screen cracked after i dropped my phone, whats the repair cost 😡",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200162,"@AppleSupport been on hold forever, nobody is answering my messages",general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200173,"@AppleSupport hey, your customer service is honestly amazing, thank you for the quick help 🙄",general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200082,"@AppleSupport hey, icloud storage charge showed up but i never upgraded my plan smh",billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200079,@AppleSupport subscription renewed even though i turned off auto renew smh,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200055,"@AppleSupport account got locked after too many login attempts, need help asap 😡",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200067,@AppleSupport i want a refund for an app that doesnt work as advertised smh,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200159,"@AppleSupport hey, does anyone actually check these messages 🙄",general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200030,"@AppleSupport hey, verification code never arrives when i try to sign into my apple id 😡",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200140,"@AppleSupport hey, how do i find my phone if i lost it smh",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200059,"@AppleSupport account got locked after too many login attempts, need help asap !!",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200016,@AppleSupport screen keeps flickering since the software update last week smh,software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200114,"@AppleSupport back glass is cracked, do you replace just that 🙄",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200168,"@AppleSupport hey, been on hold forever, nobody is answering my messages ...",general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200145,@AppleSupport how do i transfer my photos to my new phone ...,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200121,@AppleSupport how do i share my location with a family member smh,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200049,"@AppleSupport hey, i need a new code for the app store, havent received any but it says too many sent ...",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200147,@AppleSupport how do i share my location with a family member !!,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200091,@AppleSupport phone wont turn on at all after it got wet smh,hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200026,"@AppleSupport cant believe how bad my battery life got after this update, its unusable 🙄",software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200135,"@AppleSupport hey, how do i share my location with a family member",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200076,@AppleSupport why was i charged for an in app purchase i never made ...,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200094,@AppleSupport phone gets extremely hot and shuts off randomly !!,hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200018,"@AppleSupport hey, screen keeps flickering since the software update last week smh",software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200176,@AppleSupport shoutout to the genius bar team for fixing my phone so fast,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200014,@AppleSupport screen keeps flickering since the software update last week smh,software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200056,"@AppleSupport hey, two factor authentication code isnt showing up on my other device smh",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200137,"@AppleSupport hey, how do i find my phone if i lost it 😡",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200129,@AppleSupport how do i share my location with a family member ...,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200031,"@AppleSupport cant reset my password, the email link keeps expiring",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200171,@AppleSupport so disappointed with the support ive gotten this week ...,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200167,@AppleSupport does anyone actually check these messages 🙄,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200124,"@AppleSupport hey, how do i backup my phone before i sell it pls help",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200007,"@AppleSupport cant believe how bad my battery life got after this update, its unusable pls help",software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200161,@AppleSupport worst experience ive had with any tech company honestly,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200099,"@AppleSupport hey, screen has dead pixels since yesterday, never dropped it smh",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200089,@AppleSupport app store charged me twice for the same purchase this week !!,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200061,@AppleSupport icloud storage charge showed up but i never upgraded my plan pls help,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200132,@AppleSupport how do i set up face id on my new phone smh,how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200116,@AppleSupport phone gets extremely hot and shuts off randomly !!,hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200158,@AppleSupport your app is so buggy lately it barely works ...,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200118,"@AppleSupport screen cracked after i dropped my phone, whats the repair cost 😡",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200152,@AppleSupport thanks for finally getting back to me after days of waiting,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200028,@AppleSupport wifi keeps disconnecting every few minutes since i updated my phone ...,software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200178,@AppleSupport does anyone actually check these messages,general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200024,@AppleSupport phone overheats now every time i open the camera after updating !!,software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200148,"@AppleSupport hey, how do i share my location with a family member pls help",how_to_question,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200002,@AppleSupport apps keep crashing constantly after the latest ios update 🙄,software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200064,@AppleSupport subscription renewed even though i turned off auto renew 🙄,billing_subscription_dispute,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200119,@AppleSupport speaker stopped working after i dropped the phone,hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200110,"@AppleSupport camera lens shattered, can this be repaired ...",hardware_physical_damage,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200156,"@AppleSupport hey, worst experience ive had with any tech company honestly ...",general_complaint_or_praise,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200046,"@AppleSupport hey, my apple id got disabled and i dont know why ...",apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200043,@AppleSupport my apple id got disabled and i dont know why,apple_id_account_access,False,"routine issue, matches known resolution pattern",held_out_synthetic
+200003,"@AppleSupport battery drains so fast after this update, from 100 to 40 in an hour 🙄",software_update_device_issue,False,"routine issue, matches known resolution pattern",held_out_synthetic
+119293,"Took my phone off charge at 7:20am.
+
+8:03am - 60% battery remaining.
+
+@76099 plz I beg you, sort your battery life out😩",software_update_device_issue,False,"routine battery complaint, matches known resolution pattern",real
+119298,@AppleSupport I need a new code for my I-store. I haven’t recd any but msg is too many sent. Help!,apple_id_account_access,False,"routine account/App Store code issue, matches known resolution pattern",real
+119300,@76099 @AppleSupport fix this update. It’s horrible,software_update_device_issue,False,"routine software update complaint, matches known resolution pattern",real
+119323,@AppleSupport I have the latest version iOS. It started immediately after I updated my phone.,software_update_device_issue,False,"routine software update complaint, matches known resolution pattern",real
+119325,My apps stop working without warning and my phone freezes every five minutes! Love the new update @76099!!!!,software_update_device_issue,False,"routine software update complaint, matches known resolution pattern",real
+910001,@AppleSupport someone got into my apple id and changed my password i need help now,apple_id_account_access,True,"account takeover, needs urgent human verification",edge_case
+910002,@AppleSupport i will be contacting my lawyer if this billing issue is not resolved today,billing_subscription_dispute,True,legal threat mentioned,edge_case
+910003,@AppleSupport my phone was stolen and i need to lock it remotely right now,hardware_physical_damage,True,"stolen device, needs urgent account/security action",edge_case
+910004,@AppleSupport my card was charged for an app i never downloaded this looks like fraud,billing_subscription_dispute,True,"possible fraud, unauthorized charge",edge_case
+910005,@AppleSupport my battery is swelling and the case is bulging is this a fire risk,hardware_physical_damage,True,battery safety hazard,edge_case
+910006,@AppleSupport thanks for nothing lol been waiting 3 days for a response,general_complaint_or_praise,False,"venting about wait time, routine acknowledgment",edge_case
+910007,@AppleSupport phone screen cracked can you tell me the repair cost,hardware_physical_damage,False,routine repair cost question,edge_case
+910008,@AppleSupport not sure if this is a software issue or my phone is just old and dying,software_update_device_issue,False,routine troubleshooting,edge_case
+910009,@AppleSupport i want to know about the new phone but also this bill from last month is wrong,billing_subscription_dispute,False,"routine billing question, no risk signal",edge_case
+910010,@AppleSupport quick question does the new iphone support wireless charging,how_to_question,False,routine product question,edge_case
+910011,@AppleSupport this is the third time i am contacting about the same overcharge nothing has changed,billing_subscription_dispute,True,"repeated unresolved complaint, 3rd contact",edge_case
+910012,@AppleSupport my daughters ipad shows no signal at all this is scary during an emergency,software_update_device_issue,False,no signal is a routine troubleshooting case despite anxious framing,edge_case
+910013,@AppleSupport just switched to android but wanted to say thanks for the years of great support,general_complaint_or_praise,False,"farewell/compliment, no action needed",edge_case
+910014,@AppleSupport my account got disabled and i dont know why this seems like a mistake,apple_id_account_access,True,account disabled without explanation needs human review,edge_case
+910015,@AppleSupport i think someone is using my apple id without my permission,apple_id_account_access,True,possible unauthorized account use,edge_case
+910016,@AppleSupport can you confirm if the new update fixes the battery drain issue before i install it,software_update_device_issue,False,routine pre-update question,edge_case
+910017,@AppleSupport i want to cancel my apple music subscription because of the constant crashes,billing_subscription_dispute,False,routine subscription cancellation plus bug report,edge_case
+910018,@AppleSupport app store shows payment failed but the money left my bank account,billing_subscription_dispute,True,"payment discrepancy, money left account, needs verification",edge_case
+910019,@AppleSupport are the stores open on sunday near downtown,general_complaint_or_praise,False,routine store hours question,edge_case
+910020,@AppleSupport i was spoken to very rudely by a rep in the store this needs to be reported,general_complaint_or_praise,True,"complaint about rep conduct, needs human review",edge_case
+910021,@AppleSupport phone gets extremely hot and the back is bulging is that dangerous,hardware_physical_damage,True,device safety hazard,edge_case
+910022,@AppleSupport just got my phone fixed at the genius bar and it works perfectly now thanks team,general_complaint_or_praise,False,"compliment, no action needed",edge_case
+910023,@AppleSupport i think my identity was stolen through my apple account,apple_id_account_access,True,identity theft concern,edge_case
+910024,@AppleSupport price for adding applecare to my new phone,billing_subscription_dispute,False,routine pricing question,edge_case
+910025,@AppleSupport still no fix after 4 messages about my phone randomly restarting,software_update_device_issue,True,"repeated unresolved issue, 4 prior contacts",edge_case
+910026,@AppleSupport can i get a copy of my last 6 months of app store purchases,billing_subscription_dispute,False,routine document request,edge_case
+910027,@AppleSupport do you offer student discounts on new macbooks,how_to_question,False,routine discount question,edge_case
+910028,@AppleSupport furious right now my kid racked up in app purchases without permission,billing_subscription_dispute,False,"billing dispute but routine, no risk keyword",edge_case
+910029,@AppleSupport thinking about switching to android what would make you keep me as a customer,general_complaint_or_praise,False,"retention question, but not yet a cancellation request",edge_case
+910030,@AppleSupport phone was stolen need to remotely erase it immediately,hardware_physical_damage,True,"stolen device, needs urgent account action",edge_case
+910031,@AppleSupport how do i turn off the battery draining background app refresh setting,how_to_question,False,routine how-to question,edge_case
+910032,@AppleSupport my phone wont even turn on after i dropped it in the pool yesterday,hardware_physical_damage,True,"water damage plus device wont power on, safety-adjacent hardware case",edge_case
+910033,@AppleSupport are you even reading these messages i have emailed 5 times with no response,general_complaint_or_praise,False,"frustration about lack of response, routine acknowledgment",edge_case
+910034,@AppleSupport verification code says sent but i never get it no matter how many times i try,apple_id_account_access,True,"repeated failed verification, account access risk",edge_case
+910035,@AppleSupport my macbook screen just went completely black and wont respond to anything,hardware_physical_damage,False,routine hardware troubleshooting,edge_case
+910036,@AppleSupport does the trade in program accept phones with a cracked screen,how_to_question,False,routine trade-in question,edge_case
+910037,@AppleSupport i already paid for applecare but they still tried to charge me for the repair,billing_subscription_dispute,True,"billing error despite active AppleCare, needs review",edge_case
+910038,@AppleSupport just wanted to say the online chat support today was incredibly helpful,general_complaint_or_praise,False,"compliment, no action needed",edge_case
+910039,@AppleSupport phone randomly shut off and now shows the apple logo on a loop after the update,software_update_device_issue,False,routine software issue despite dramatic framing,edge_case
+910040,@AppleSupport can you walk me through setting up apple pay on my new watch,how_to_question,False,routine how-to question,edge_case
+910041,@AppleSupport i am extremely angry my account was hacked and used to buy things i never authorized,apple_id_account_access,True,account hacked with unauthorized purchases,edge_case
+910042,@AppleSupport this is unacceptable i have called 3 times about the same crash issue and nothing works,software_update_device_issue,True,"repeated unresolved issue, 3 prior contacts",edge_case
+910043,@AppleSupport what colors does the new iphone come in,how_to_question,False,routine product question,edge_case
+910044,@AppleSupport my phone caught a small spark near the charging port this seems dangerous,hardware_physical_damage,True,"spark near charging port, safety hazard",edge_case
+910045,"@AppleSupport really appreciate how fast the replacement device arrived, great service",general_complaint_or_praise,False,"compliment, no action needed",edge_case
