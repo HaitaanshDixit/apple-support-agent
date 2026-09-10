@@ -1,4 +1,4 @@
-# AppleSupport (@AppleSupport) AI Support Agent
+# AppleSupport AI Agent
 
 An intent classifier + grounded reply drafter + escalation policy for the `@AppleSupport`
 brand, built from a real (if small) slice of the Customer Support on Twitter dataset.
