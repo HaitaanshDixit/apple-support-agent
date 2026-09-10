@@ -5,13 +5,9 @@ brand, built from a real (if small) slice of the Customer Support on Twitter dat
 
 ## About the data (read this first)
 
-You gave me `data/twcs_sample_raw.csv`, a 93-row slice of the real
+Given the dataset `data/twcs_sample_raw.csv`, a 93-row slice of the real
 `thoughtvector/customer-support-on-twitter` dataset (correct schema, real tweets).
-Originally I was going to build this for `sprintcare`, but that brand only has 1 usable
-row in this slice. Per your instruction, I switched to `AppleSupport`, which has the most
-coverage in this file: **13 real reply pairs**, almost all from the well-documented 2017
-iOS 11.0.2 battery-drain backlash, plus one real "App Store verification code never
-arrives" case.
+The `AppleSupport`, slice of dataset which has the most coverage in this file: **13 real reply pairs**, almost all from the well-documented 2017 iOS 11.0.2 battery-drain backlash, plus one real "App Store verification code never arrives" case.
 
 13 real examples is not enough on its own to train a classifier or fill a 150-example
 golden set, so this repo is built in three honest layers:
