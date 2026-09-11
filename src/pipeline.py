@@ -3,12 +3,14 @@ import json
 from src.classify import predict, load_model
 from src.escalate import decide
 from src.draft_reply import draft
+from src.escalation_notes import escalation_note_for_reason
 
 def run(text, use_llm=False):
     vectorizer, clf = load_model()
     intent, confidence, all_probs = predict(text, vectorizer, clf)
     escalate, reason = decide(text, intent, confidence)
-    reply, reply_source = draft(text, intent, escalate, use_llm=use_llm)
+    reply, reply_source = draft(text, intent, use_llm=use_llm)
+    internal_note = escalation_note_for_reason(reason) if escalate else None
 
     return {
         "text": text,
@@ -18,6 +20,7 @@ def run(text, use_llm=False):
         "escalate_reason": reason,
         "reply": reply,
         "reply_source": reply_source,
+        "internal_note": internal_note,
     }
 
 if __name__ == "__main__":
