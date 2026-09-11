@@ -48,15 +48,21 @@ row tagged** in `eval/golden_eval.csv` and metrics broken out by source in
   small similarity bonus for real rows so genuine historical resolutions are preferred
   when relevant
 - `src/escalate.py` : rule-based escalation policy
+- `src/escalation_notes.py` : turns an escalation reason into a short internal note for
+  a human agent, kept separate from the customer-facing reply
 - `src/draft_reply.py` : drafts a reply from the retrieved historical resolution;
-  optionally rewrites it with Claude if `ANTHROPIC_API_KEY` is set (headline numbers do
-  NOT depend on having a key)
-- `src/pipeline.py` : glues classify -> escalate -> draft together, CLI entry point
+  optionally rewrites it with an LLM via Groq's free API if `GROQ_API_KEY` is set
+  (headline numbers do NOT depend on having a key)
+- `src/llm_backend.py` : the Groq API call used for optional LLM-drafted replies and the
+  optional LLM judge
+- `src/pipeline.py` : glues classify -> escalate -> draft together, CLI entry point;
+  also attaches an `internal_note` field for escalated messages, kept separate from the
+  customer-facing `reply` field
 - `eval/baselines.py` : trivial (majority class) and simple (keyword rules) baselines
 - `eval/run_metrics.py` : intent + escalation metrics vs baselines, broken out by data
   source
-- `eval/judge.py` : reply-quality rubric judge (LLM-backed if key present, heuristic
-  fallback otherwise)
+- `eval/judge.py` : reply-quality rubric judge (LLM-backed via Groq if key present,
+  heuristic fallback otherwise)
 - `eval/run_replies.py` : runs the pipeline over the golden set and scores replies
 - `eval/sample_for_judge.py` : deterministically samples 30 pipeline outputs
 - `eval/human_scores.csv`, `eval/judge_agreement.py` : own manual 0-5 ratings on that
@@ -81,7 +87,8 @@ Try a single message through the pipeline:
 python3 -m src.pipeline --text "@AppleSupport my battery drains so fast since the new update, its unusable"
 ```
 
-Turn on LLM-drafted replies and an LLM judge (optional, requires `ANTHROPIC_API_KEY`):
+Turn on LLM-drafted replies and an LLM judge (optional, requires a free `GROQ_API_KEY`
+from console.groq.com):
 
 ```bash
 python3 -m src.pipeline --text "..." --use_llm
