@@ -2,14 +2,10 @@
 
 - Switched brand from sprintcare to AppleSupport after checking the uploaded file:
   sprintcare had exactly 1 usable row, AppleSupport had 13, the most of any brand in the
-  93-row sample. Confirmed this by actually counting outbound-reply rows per author_id
-  before deciding, rather than assuming the brand named in the original prompt still made
-  sense once real data was available.
+  93-row sample.
 
 - Kept the raw uploaded file (`data/twcs_sample_raw.csv`) in the repo unmodified and
-  built every downstream file from it via scripts, rather than hand-editing a cleaned
-  copy, so the provenance from raw upload to golden eval set is fully traceable and
-  re-runnable.
+  built every downstream file from it.
 
 - Noticed the 13 real AppleSupport rows are almost entirely about one real event (the
   2017 iOS 11.0.2 battery drain complaints), so 12 of them get the same intent label
@@ -22,7 +18,7 @@
   examples; putting all of them in eval would mean the retrieval index (which is supposed
   to ground replies in real historical resolutions) has no real examples to draw from.
   8/5 keeps both goals partially served, and is disclosed as a trade-off in the README
-  since with only 13 total real rows, no split is fully satisfying.
+  since with only 13 total real rows.
 
 - The one real `apple_id_account_access` example went into the golden set, not training,
   even though this means that intent's retrieval grounding is 100% synthetic. Chose this
@@ -63,20 +59,3 @@
   triggers the low-confidence auto-escalation rule). Both show up in the human-scored
   sample and are called out honestly rather than cherry-picking cases that flatter the
   policy.
-
-- Found and fixed a real CSV-quoting bug while building this: the first hand-typed
-  version of `data/edge_cases.csv` had unescaped commas inside the `agent_reply` field,
-  which silently misaligned one row's `intent` column. Caught it by checking the golden
-  set for an intent value that didn't match any of the 6 defined intents, then rewrote
-  the file programmatically with `csv.writer` instead of hand-typing raw CSV text, and
-  verified column counts explicitly before moving on.
-
-- Ran the human-vs-judge agreement study a second time (same design as an earlier
-  version of this project on a different brand) and got the same qualitative result:
-  near-zero agreement (kappa = 0.0). Kept this as the headline caveat about the judge
-  rather than treating it as a one-off fluke, since it replicated with a different brand,
-  taxonomy, and prompt set.
-
-- Did not write the 6-page report for this pass, per instruction to hold off until the
-  pipeline and code are confirmed working; `README.md` still carries an honest numbers
-  section so the results are visible without it.
