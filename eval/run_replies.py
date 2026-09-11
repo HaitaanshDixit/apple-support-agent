@@ -19,6 +19,7 @@ def main():
             "gold_escalate": row["gold_escalate"],
             "pred_escalate": result["escalate"],
             "escalate_reason": result["escalate_reason"],
+            "internal_note": result["internal_note"],
             "reply": result["reply"],
             "judge_total": j["total"],
             "judge_subscores": j["subscores"],
