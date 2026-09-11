@@ -1,6 +1,7 @@
 import os
 import re
 import json
+from src.llm_backend import generate
 
 RUBRIC = [
     "acknowledges_issue",
@@ -44,14 +45,6 @@ def heuristic_judge(text, intent, escalate, reply):
     return {"subscores": scores, "total": total, "max": len(RUBRIC), "backend": "heuristic"}
 
 def llm_judge(text, intent, escalate, reply):
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        return None
-    try:
-        import anthropic
-    except ImportError:
-        return None
-
     prompt = f"""Rate this customer support reply on a 0/1 scale for each criterion. Return only JSON.
 
 Customer message: {text}
@@ -68,20 +61,16 @@ Criteria:
 
 Return JSON like: {{"acknowledges_issue": 1, "correct_next_action": 1, "empathetic_tone": 1, "no_fabricated_promise": 1, "concise": 1}}"""
 
-    client = anthropic.Anthropic()
-    resp = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=200,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    raw = resp.content[0].text.strip()
+    raw, backend = generate(prompt, max_tokens=200)
+    if not raw:
+        return None
     raw = re.sub(r"^```json|```$", "", raw).strip()
     try:
         subscores = json.loads(raw)
     except json.JSONDecodeError:
         return None
     total = sum(subscores.values())
-    return {"subscores": subscores, "total": total, "max": len(RUBRIC), "backend": "llm"}
+    return {"subscores": subscores, "total": total, "max": len(RUBRIC), "backend": backend}
 
 def judge(text, intent, escalate, reply, use_llm=True):
     if use_llm:
