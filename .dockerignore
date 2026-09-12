@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+src/intent_model.pkl
+src/retrieval_index.pkl
+eval/metrics_summary.json
+eval/pipeline_outputs.csv
+eval/judge_agreement_sample.csv
+eval/golden_eval.csv
+data/train_pool.csv
+data/held_out_pool.csv
+data/real_golden_rows.csv
+data/apple_synthetic_corpus.csv
+data/apple_support_real_pairs.csv
+data/apple_real_labeled.csv
