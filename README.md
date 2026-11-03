@@ -96,7 +96,7 @@ python3 -m src.pipeline --text "..." --use_llm
 
 ## Headline numbers
 
-- Intent accuracy on golden set (150 examples): 77.3%, vs 17.3% trivial baseline. The
+- Intent accuracy on golden set (containing 150 examples): 77.3%, vs 17.3% trivial baseline. The
   simple keyword-rule baseline actually edges it out slightly (80.0%),  see
   `DECISION_LOG.md` for why I kept the ML model anyway and didn't p-hack the eval set.
 - Intent accuracy by source: **100% on the 5 real examples**, 86.0% on held-out
